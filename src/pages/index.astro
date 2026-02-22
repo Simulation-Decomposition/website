@@ -3,8 +3,9 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="SimDec — Simulation Decomposition">
-  <section style="margin-bottom: 2.5rem;">
-    <h1 style="font-size: 2.5rem; margin: 0 0 0.75rem 0;">
+  <!-- HERO -->
+  <section style="margin-bottom: 2.75rem;">
+    <h1 style="font-size: 2.6rem; margin: 0 0 0.75rem 0;">
       Simulation Decomposition (SimDec)
     </h1>
     <p style="font-size: 1.2rem; opacity: 0.85; margin: 0;">
@@ -12,20 +13,152 @@ import Layout from "../layouts/Layout.astro";
     </p>
   </section>
 
-  <section style="margin-bottom: 2.5rem;">
-    <h2>What is SimDec?</h2>
-    <p>
-      SimDec decomoses simulation results into interpretable components.
-      Instead of black-box averages, decision-makers see drivers, interactions, and trade-offs.
-    </p>
-  </section>
+      <!-- WHAT IS -->
+      <section style="margin-bottom: 3rem;">
+        <h2>What is SimDec?</h2>
 
-  <section>
-    <h2>Start here</h2>
-    <ul>
-      <li><a href="/posts">Tutorials, comparisons, cases, news</a></li>
-      <li><a href="/publications">Papers and publications</a></li>
-      <li><a href="/people">Team and contributors</a></li>
-    </ul>
+        <div style="display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap;">
+
+          <div style="flex: 1 1 520px; min-width: 320px;">
+            <p>
+              SimDec takes a Monte Carlo simulation dataset, detects which inputs are most influential for the output, and then decomposes the output
+              distribution into portions produced by the combinations of these influential inputs.
+            </p>
+
+            <p>
+              You don’t just learn <em>what</em> factors matter; you see
+              <em>how</em> they matter, or <em>how to steer your output</em> to a desired range by
+              using these drivers.
+            </p>
+          </div>
+
+          <aside style="flex: 0 1 420px; min-width: 300px;">
+            <a href="/process.PNG" target="_blank" rel="noopener noreferrer" style="display: block;">
+              <img
+                src="/process.PNG"
+                alt="SimDec process"
+                style="width: 100%; height: auto; border: 1px solid rgba(0,0,0,.12); border-radius: 12px; cursor: zoom-in;"
+              />
+            </a>
+          </aside>
+
+        </div>
+      </section>
+
+      <!-- HOW TO USE -->
+      <section style="margin-bottom: 3rem;">
+        <h2>How to use SimDec?</h2>
+
+        <p>
+          SimDec is an open-source project with several free tools:
+        </p>
+
+        <ul>
+          <li>
+            No-code web dashboard
+            <a href="https://simdec.io" target="_blank" rel="noopener noreferrer">
+              simdec.io
+            </a>.
+            Watch
+            <a href="https://youtu.be/z0QX121o50A?si=aBGrxJKLN6TmO4sb" target="_blank" rel="noopener noreferrer">
+              tutorial
+            </a>.
+          </li>
+
+          <li>
+            <a href="https://github.com/Simulation-Decomposition/simdec-python" target="_blank" rel="noopener noreferrer">
+              SimDec package in Python
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/Simulation-Decomposition/simdec-R" target="_blank" rel="noopener noreferrer">
+              SimDec package in R
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/Simulation-Decomposition/simdec-matlab" target="_blank" rel="noopener noreferrer">
+              SimDec package for Matlab
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/Simulation-Decomposition/SimulationDecomposition.jl" target="_blank" rel="noopener noreferrer">
+              SimDec package in Julia
+            </a>
+          </li>
+        </ul>
+
+        <p style="margin-top: 1.25rem;">
+          Also see:
+        </p>
+
+        <ul>
+          <li>
+            <a href="https://youtu.be/k0uvq-_zW18?si=mXsL-Xz24yoyN2Kd" target="_blank" rel="noopener noreferrer">
+              A quick Monte Carlo simulation in Excel with Data Tables
+            </a>
+          </li>
+
+          <li>
+            <a href="https://youtu.be/bV3X_MSJmYA?si=MqxAY8XJP8W-TyzQ" target="_blank" rel="noopener noreferrer">
+              How to read SimDec
+            </a>
+          </li>
+        </ul>
+
+        <figure style="margin: 2rem 0 0 0;">
+          <a href="https://simdec.io" target="_blank" rel="noopener noreferrer" style="display: block;">
+            <img
+              src="/dashboard.JPG"
+              alt="SimDec dashboard"
+              style="width: 100%; height: auto; border: 1px solid rgba(0,0,0,.12); border-radius: 12px; cursor: pointer;"
+            />
+          </a>
+        </figure>
+      </section>
+  <!-- BORN FROM SCIENCE -->
+  <section style="margin-bottom: 1rem;">
+    <h2>Born from science</h2>
+
+    <div style="display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap;">
+      <div style="flex: 1 1 520px; min-width: 320px;">
+        <p>
+          SimDec is a set of interdisciplinary inventions: an efficient global sensitivity analysis method
+          paired with a decomposition algorithm for visualization. Our SimDec book:
+        </p>
+
+        <h3 style="margin-top: 1.25rem; margin-bottom: 0.5rem;">
+          Sensitivity Analysis for Business, Technology, and Policymaking, Made Easy with Simulation Decomposition (SimDec)
+        </h3>
+
+        <ul>
+          <li>Foreword by Andrea Saltelli &amp; Afterword by Sam Savage</li>
+          <li>Overview of sensitivity and uncertainty analysis methods (Chapter 1)</li>
+          <li>Interpretation and usage instructions for SimDec (Chapter 2)</li>
+          <li>Overview of applications (Chapter 3)</li>
+          <li>Multiple application cases of SimDec (Chapters 4–13)</li>
+        </ul>
+
+        <p>
+          <a
+            href="https://www.taylorfrancis.com/books/oa-edit/10.4324/9781003453789/sensitivity-analysis-business-technology-policymaking-mariia-kozlova-julian-scott-yeomans"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open access
+          </a>
+        </p>
+      </div>
+
+      <aside style="flex: 0 1 220px; min-width: 200px;">
+        <img
+          src="/book.jpg"
+          alt="SimDec book cover"
+          style="width: 100%; height: auto; border: 1px solid rgba(0,0,0,.12); border-radius: 12px;"
+        />
+      </aside>
+    </div>
   </section>
 </Layout>
