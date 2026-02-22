@@ -1,0 +1,58 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+const all = (await getCollection("posts"))
+  .filter((p) => !p.data.draft)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const categories = ["tutorial", "comparison", "cases", "news", "other"] as const;
+
+const categoryTitle: Record<(typeof categories)[number], string> = {
+  tutorial: "Tutorials",
+  comparison: "Comparisons",
+  cases: "Cases",
+  news: "News",
+  other: "Other",
+};
+
+function fmt(d: Date) {
+  return d.toISOString().slice(0, 10);
+}
+---
+
+<Layout title="Posts | SimDec">
+  <h1>Posts</h1>
+
+  {categories.map((cat) => {
+    const items = all.filter((p) => p.data.category === cat);
+    if (items.length === 0) return null;
+
+    return (
+      <section>
+        <h2>{categoryTitle[cat]}</h2>
+
+        <ul style="padding-left: 1.2rem; margin: 0;">
+          {items.map((p) => (
+            <li style="margin: 0.9rem 0;">
+              <a href={`/posts/${p.slug}/`} style="font-weight: 700;">
+                {p.data.title}
+              </a>
+
+              <div style="opacity: 0.75; margin-top: 0.15rem;">
+                {fmt(p.data.date)}
+                {p.data.summary ? ` — ${p.data.summary}` : ""}
+              </div>
+
+              {p.data.tags?.length ? (
+                <div style="opacity: 0.7; margin-top: 0.15rem; font-size: 0.95rem;">
+                  Tags: {p.data.tags.join(", ")}
+                </div>
+              ) : null}
+            </li>
+          ))}
+        </ul>
+      </section>
+    );
+  })}
+</Layout>
