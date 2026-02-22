@@ -109,7 +109,7 @@ import Layout from "../layouts/Layout.astro";
         </ul>
 
         <figure style="margin: 2rem 0 0 0;">
-          <a href="https://simdec.io" target="_blank" rel="noopener noreferrer" style="display: block;">
+          <a href="https://simdec.io" target="_blank" rel="noopener noreferrer" title="Try dashboard" style="display: block;">
             <img
               src="/dashboard.JPG"
               alt="SimDec dashboard"
@@ -118,6 +118,7 @@ import Layout from "../layouts/Layout.astro";
           </a>
         </figure>
       </section>
+
   <!-- BORN FROM SCIENCE -->
   <section style="margin-bottom: 1rem;">
     <h2>Born from science</h2>
@@ -135,10 +136,10 @@ import Layout from "../layouts/Layout.astro";
 
         <ul>
           <li>Foreword by Andrea Saltelli &amp; Afterword by Sam Savage</li>
-          <li>Overview of sensitivity and uncertainty analysis methods (Chapter 1)</li>
-          <li>Interpretation and usage instructions for SimDec (Chapter 2)</li>
-          <li>Overview of applications (Chapter 3)</li>
-          <li>Multiple application cases of SimDec (Chapters 4–13)</li>
+          <li>Chapter 1: Overview of sensitivity and uncertainty analysis methods</li>
+          <li>Chapter 2: Interpretation and usage instructions for SimDec</li>
+          <li>Chapter 3: Overview of applications</li>
+          <li>Chapters 4-13: Multiple application cases of SimDec</li>
         </ul>
 
         <p>
@@ -153,12 +154,20 @@ import Layout from "../layouts/Layout.astro";
       </div>
 
       <aside style="flex: 0 1 220px; min-width: 200px;">
-        <img
-          src="/book.jpg"
-          alt="SimDec book cover"
-          style="width: 100%; height: auto; border: 1px solid rgba(0,0,0,.12); border-radius: 12px;"
-        />
+        <a
+          href="https://www.taylorfrancis.com/books/oa-edit/10.4324/9781003453789/sensitivity-analysis-business-technology-policymaking-mariia-kozlova-julian-scott-yeomans"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="display: block;"
+        >
+          <img
+            src="/book.jpg"
+            alt="SimDec book cover"
+            style="width: 100%; height: auto; border: 1px solid rgba(0,0,0,.12); border-radius: 12px; cursor: pointer;"
+          />
+        </a>
       </aside>
     </div>
   </section>
+
 </Layout>
