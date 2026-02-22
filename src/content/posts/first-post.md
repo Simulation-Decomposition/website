@@ -1,16 +1,11 @@
 ---
-
-title: "SimDec Website Launched"
-
-date: 2026-02-21
-
+title: "Welcome to simdec.fi"
+date: 2026-02-22
 category: "news"
-
-summary: "A GitHub-based, free SimDec site."
-
+summary: "We’re building a small, GitHub-based home for SimDec: tools, posts, publications, and people."
+tags: ["website", "community"]
 ---
 
-
-
-Welcome to \*\*simdec.fi\*\*.
+We’re building a small, GitHub-based home for SimDec: tools, posts, publications, and people.
+Welcome to simdec.fi
 
