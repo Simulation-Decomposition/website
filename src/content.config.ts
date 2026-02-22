@@ -38,6 +38,7 @@ const people = defineCollection({
     affiliation: z.string().optional(),
     category: z.enum(["business-finland-2022", "contributors", "sponsors"]),
     order: z.number().int().optional(),
+    avatar: z.string().optional(),   // <-- add this line
     links: z
       .array(
         z.object({
