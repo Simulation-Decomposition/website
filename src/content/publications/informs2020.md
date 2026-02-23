@@ -8,12 +8,14 @@ venue: "INFORMS Transactions on Education"
 summary: "Streamlined SimDec visualization algorithm and Excel implementation for teaching and cross-disciplinary use. (No sensitivity indices yet)"
 category: "methodology"
 url: "https://pubsonline.informs.org/doi/pdf/10.1287/ited.2019.0240"
+order: 2
 tags:
 - "simdec"
 - "monte-carlo"
 - "visualization"
 - "decision-making"
 - "education"
+
 ---
 
 This paper was about making SimDec usable. After the first applications, the question became practical: how do we turn the idea into a clean, repeatable visualization algorithm that anyone can implement? Here we streamlined the SimDec procedure, formalized the step-by-step decomposition logic, and built an Excel-based implementation that makes the method accessible without specialized software.

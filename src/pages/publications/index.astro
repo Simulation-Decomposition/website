@@ -3,7 +3,11 @@ import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
 const all = (await getCollection("publications"))
-  .sort((a, b) => (b.data.year - a.data.year) || a.data.title.localeCompare(b.data.title));
+  .sort((a, b) =>
+    (b.data.year - a.data.year) ||
+    (a.data.order ?? 999) - (b.data.order ?? 999) ||
+    a.data.title.localeCompare(b.data.title)
+  );
 
 const categories = ["books", "methodology", "applications", "conference"] as const;
 
@@ -47,8 +51,8 @@ const categoryTitle: Record<(typeof categories)[number], string> = {
               <div style="opacity: 0.75; margin-top: 0.25rem;">
                 {p.data.url ? (
                   <>
-                    <a href={p.data.url} target="_blank" rel="noopener noreferrer">Link</a>
-                    {" · "}
+                    <a href={p.data.url} target="_blank" rel="noopener noreferrer">PDF</a>
+               
                   </>
                 ) : null}
                 {p.data.doi ? (
