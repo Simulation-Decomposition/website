@@ -17,6 +17,6 @@ tags:
 ---
 This paper introduces the official Python implementation of Simulation Decomposition, providing a clean API for uncertainty and sensitivity analysis within computational workflows.
 
-In addition to the package, SimDec is made accessible through a no-code interactive web dashboard that allows users to upload simulation datasets and generate decomposed visualizations without programming. [Watch the dashboard tutorial](https://youtu.be/z0QX121o50A?si=DcS-MZQpL-kwDoyv).
+In addition to the package, SimDec is made accessible through a no-code interactive web dashboard [simdec.io](https://simdec.io/) that allows users to upload simulation datasets and generate decomposed visualizations without programming. [Watch the dashboard tutorial](https://youtu.be/z0QX121o50A?si=DcS-MZQpL-kwDoyv).
 
 Together, the Python package and the web interface lower the barrier to applying SimDec in research, industry, and policy settings.
