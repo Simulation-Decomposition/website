@@ -16,4 +16,4 @@ tags:
 - "monte-carlo"
 ---
 
-A short letter extending SimDec to systemic risk planning problems where a small failure can trigger domino-like cascading collapse, and showing how decomposition helps compare reactive versus proactive mitigation policies when collapse is a low-probability / high-impact event. :contentReference[oaicite:0]{index=0}
+A short letter extending SimDec to systemic risk planning problems where a small failure can trigger domino-like cascading collapse, and showing how decomposition helps compare reactive versus proactive mitigation policies when collapse is a low-probability / high-impact event. 
