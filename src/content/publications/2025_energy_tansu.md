@@ -8,7 +8,7 @@ authors:
   - "Rasul Satymov"
   - "Christian Breyer"
 venue: "Energy"
-category: "application"
+category: "applications"
 summary: "Where should e-methanol be produced when renewable electricity and CO₂ sources are far apart? A national case study comparing transport of electricity, hydrogen, and CO₂."
 url: "https://doi.org/10.1016/j.energy.2025.137531"
 ---
